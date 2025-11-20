@@ -76,7 +76,7 @@ class BST:
             #put root in the queue
         while not q.empty():
             #until the queue become empty
-            current = q.get();
+            current = q.get()
             #current node is the first node (Dequeue) 
             if current.left:
                 q.put(current.left)
