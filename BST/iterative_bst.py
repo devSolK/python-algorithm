@@ -18,7 +18,7 @@ class BST:
         if self.root is None:
             # if root is none
             # set node's value = data
-            self.root = BST.Node(data) # ==> recursive base case (return)
+            self.root = BST.Node(data)
         else :
             #if root is not none
             current = self.root
