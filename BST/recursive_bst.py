@@ -13,7 +13,7 @@ class BST:
         
     def insert_helper(self, data, subtree):
         if(subtree==None):
-            #nothing inside (Base case)
+            #nothing inside
             return BST.Node(data)
         elif(data < subtree.data):
             #if data is smaller then sub root
