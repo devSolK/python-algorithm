@@ -1,5 +1,12 @@
 from typing import Optional
 
+# NOTE:
+#     What if iterative?
+#     What if recursive?
+#     What if no helper function allowed?
+#     Is this BFS? or DFS? (traversal)
+#     Time complexity (when balanced / not balanced)
+
 class BST:
     # node -------------------
     class Node:
@@ -12,7 +19,8 @@ class BST:
     #BST's init function
     def __init__(self):
         self.root: Optional[BST.Node] = None
-    
+        
+    # =================================== 5
     #This function prints every value in the tree
     #that is between min and max inclusive.
     #Function only visits a subtree where the values may be valid.
@@ -58,8 +66,14 @@ class BST:
             else:
                 curr = None
         print("END")
+# =================================== 15
+    def inorder_successor(self, value):
+        return inorder_successor_helper(self.root, value)
 
-# ===================================
+    def inorder_successor_helper(self, subtree, value):
+        #...
+
+# =================================== 6
 class BT:
     class Node:
         # Node's init function
