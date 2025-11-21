@@ -74,4 +74,17 @@ class BT:
         
     #returns the height of the binary tree.
     # def height(self):
+    # always forgot putting 'self.' when calling functions...
+    def height_helper_recursive(self, subtree):
+        if subtree is not None:
+            l_height = self.height_helper_recursive(subtree.left)
+            r_height = self.height_helper_recursive(subtree.right)
+            return 1 + max(l_height, r_height)
+        else:
+            return 0
+
+    def height(self):
+        return self.height_helper_recursive(self.root)
+
+
 
